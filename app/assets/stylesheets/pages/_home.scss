@@ -1,4 +1,13 @@
-// Specific CSS for your home-page
+.hello {
+  color: $green;
+  font-size: 75px;
+}
+
+.intro {
+  font-weight: 300;
+  font-style: italic;
+  color: $gray;
+}
 
 // @media (max-width: 1200px) {
 
@@ -11,5 +20,5 @@
 
 // }
 
-// @media (max-width: 576px) {
-// }
+@media (max-width: 576px) {
+}
