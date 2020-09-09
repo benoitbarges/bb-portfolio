@@ -1,6 +1,44 @@
 #banner{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
+
+  .my-name {
+    font-weight: 200;
+    font-size: 70px;
+    color: $green2;
+    // text-shadow: 2px 2px 8px $light-green;
+  }
+
+  .fullstack {
+    font-weight: 300;
+    font-size: 30px;
+    color: $gray;
+  }
+}
+
+// @media (max-width: 1200px) {
+
+// }
+// @media (max-width: 992px) {
+
+// }
+
+@media (max-width: 768px), (max-height: 768px) {
+  .my-name {
+    font-size: 55px !important;
+  }
+}
+
+@media (max-width: 576px), (max-height: 576px) {
+  .my-name {
+    font-size: 40px !important;
+  }
+
+  .fullstack {
+    font-size: 20px !important;
+  }
 }
