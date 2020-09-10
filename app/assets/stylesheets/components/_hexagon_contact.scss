@@ -1,0 +1,105 @@
+.hexagon-contact {
+  position: relative;
+  width: 60px;
+  height: 34.64px;
+  background-color: $green;
+  margin: 17.32px 0;
+  // box-shadow: 0 0 8px rgba(111,249,222,1);
+  margin-bottom: 45px;
+  animation-duration: 0.8s;
+
+  @keyframes spin{
+    100% { transform: rotate(-360deg); }
+  }
+
+  @-webkit-keyframes spin{
+    100% { -webkit-transform: rotate(-360deg); }
+  }
+  @-moz-keyframes spin{
+    100% { -moz-transform: rotate(-360deg); }
+  }
+
+  @keyframes spin-reverse{
+    100% { transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes spin-reverse{
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin-reverse{
+    100% { -moz-transform: rotate(360deg); }
+  }
+}
+
+.hexagon-contact:before,
+.hexagon-contact:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 42.43px;
+  height: 42.43px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 8.7868px;
+  // box-shadow: 0 0 8px rgba(111,249,222,1);
+}
+
+.hexagon-contact:before {
+  top: -21.2132px;
+}
+
+.hexagon-contact:after {
+  bottom: -21.2132px;
+}
+
+/*cover up extra shadows*/
+.hexagon-contact span {
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0;
+  width:60px;
+  height:34.6410px;
+  z-index: 2;
+  background: inherit;
+}
+
+.contact-element {
+  position: relative;
+
+  .fa-logo {
+    position: absolute;
+    top: 7%;
+    z-index: 10;
+    color: white;
+    font-size: 30px;
+  }
+
+  .fa-paper-plane {
+    left: 20%;
+    top: 1%;
+  }
+
+  .fa-github {
+    left: 25%;
+  }
+
+  .fa-linkedin-in {
+    left: 29%;
+  }
+}
+
+.spin-contact {
+  animation: spin 5s ease;
+  animation-duration: 0.8s;
+  box-shadow: 0 0 8px rgba(111,249,222,1);
+}
+
+.spin-reverse-contact {
+  animation: spin-reverse 5s ease;
+  animation-duration: 0.8s;
+  box-shadow: 0 0 8px rgba(111,249,222,1);
+}
+

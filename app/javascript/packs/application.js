@@ -27,8 +27,10 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { animateVerticalLine } from '../components/animate_vertical_line';
+import { spinHexagon } from '../components/spin_hexagon';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  animateVerticalLine();
+  spinHexagon();
 });
