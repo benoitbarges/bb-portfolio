@@ -3,13 +3,16 @@
   width: 350px;
   height: 202.07px;
   margin: 101.04px 0;
-  // background-image: url("tennis.jpeg");
   background-size: auto 392.5982px;
   background-position: center;
   border-left: solid 5px #ffffff;
   border-right: solid 5px #ffffff;
   filter: blur(0px);
   z-index: 20;
+
+  // &:hover {
+  //    // box-shadow: 0 0 8px rgba(111,249,222,1);
+  // }
 }
 
 .hexTop,
@@ -89,6 +92,7 @@
   z-index: 10;
   top: -5%;
   right: -5%;
+  transition: box-shadow 0.3s ease-in-out;
 
   @keyframes spin{
     100% { transform: rotate(360deg); }

@@ -2,16 +2,24 @@
   border: none;
   background-color: $background;
   flex-direction: initial;
+  justify-content: space-around;
 
   .description {
     font-size: 18px;
     color: $gray;
+    width: 50%;
+    text-align: justify;
   }
 
   .technologies {
 
     h2 {
       color: $green;
+    }
+
+    li {
+      font-size: 18px;
+      color: $dark-green;
     }
   }
 }
