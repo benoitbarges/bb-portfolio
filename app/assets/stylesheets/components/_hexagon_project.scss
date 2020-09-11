@@ -9,7 +9,7 @@
   border-left: solid 5px #ffffff;
   border-right: solid 5px #ffffff;
   filter: blur(0px);
-  z-index: 2;
+  z-index: 20;
 }
 
 .hexTop,
@@ -70,7 +70,7 @@
   left: 0;
   width: 340.0000px;
   height: 196.2991px;
-  z-index: 2;
+  z-index: 20;
   background: inherit;
   filter: blur(2px);
 }
@@ -84,9 +84,9 @@
   height: 222.28px;
   background-color: #e4f4f3;
   margin: 111.14px 0;
-  border-left: solid 5px $dark-green;
-  border-right: solid 5px $dark-green;
-  z-index: 0;
+  border-left: solid 5px $green;
+  border-right: solid 5px $green;
+  z-index: 10;
   top: -5%;
   right: -5%;
 
@@ -106,7 +106,7 @@
 .hexagon-project-border:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   width: 272.24px;
   height: 272.24px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
@@ -118,23 +118,70 @@
 
 .hexagon-project-border:before {
   top: -136.1181px;
-  border-top: solid 7.0711px $dark-green;
-  border-right: solid 7.0711px $dark-green;
+  border-top: solid 7.0711px $green;
+  border-right: solid 7.0711px $green;
 }
 
 .hexagon-project-border:after {
   bottom: -136.1181px;
-  border-bottom: solid 7.0711px $dark-green;
-  border-left: solid 7.0711px $dark-green;
+  border-bottom: solid 7.0711px $green;
+  border-left: solid 7.0711px $green;
 }
 
+// -----------------------------------------------------------------------------
+// project-div
+// -----------------------------------------------------------------------------
+
+.project-div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 10%;
+  align-items: center;
+
+  .project-name {
+    color: $green;
+    cursor: pointer;
+    width: 50%;
+    z-index: 0;
+    text-align: center;
+  }
+}
 
 .project-element {
   position: relative;
+  cursor: pointer;
+  animation-duration: 1s ease;
+  z-index: 10;
+
+  @keyframes slide-right {
+    100% { transform: translateX(-90%);}
+  }
+
+  @-webkit-keyframes slide-right {
+    100% { transform: translateX(-90%); }
+  }
+
+  @-moz-keyframes slide-right {
+    100% { transform: translateX(-90%); }
+  }
+
+  @keyframes slide-left {
+    100% { transform: translateX(88%);}
+  }
+
+  @-webkit-keyframes slide-left {
+    100% { transform: translateX(88%); }
+  }
+
+  @-moz-keyframes slide-left {
+    100% { transform: translateX(88%); }
+  }
+
 
   img {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
   }
 
   .logo-ama {
@@ -153,4 +200,12 @@
 .spin-project {
   animation: spin infinite linear;
   animation-duration: 60s;
+}
+
+.slide-right {
+  animation: slide-right 1s ease forwards;
+}
+
+.slide-left {
+  animation: slide-left 1s ease forwards;
 }

@@ -29,8 +29,10 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { animateVerticalLine } from '../components/animate_vertical_line';
 import { spinHexagon } from '../components/spin_hexagon';
+import { openProject } from '../components/open_project';
 
 document.addEventListener('turbolinks:load', () => {
   animateVerticalLine();
   spinHexagon();
+  openProject();
 });
