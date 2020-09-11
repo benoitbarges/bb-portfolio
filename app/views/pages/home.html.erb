@@ -34,6 +34,7 @@
         <span>
         </span>
       </div>
+
       <i class="fa-logo fas fa-paper-plane"></i>
       <div class="vertical-line animate__animated animate__fadeInDown" hidden></div>
     </div>
@@ -58,11 +59,23 @@
   </div>
 
   <div class="project-element">
-    <div class="hexagon-project">
+    <div class="hexagon-project" style="background-image: url('<%= image_path('tennis.jpeg') %>');">
       <div class="hexTop"></div>
       <div class="hexBottom"></div>
     </div>
-    <%= image_tag "ama_no_bg.png" %>
+    <%= image_tag "ama_no_bg.png", class: "logo-ama" %>
+    <div class="hexagon-project-border spin-project"></div>
   </div>
+
+  <div class="project-element">
+    <div class="hexagon-project" style="background-image: url('<%= image_path('paillette.jpeg') %>');">
+      <div class="hexTop"></div>
+      <div class="hexBottom"></div>
+    </div>
+    <%= image_tag "paillette.svg", class: "logo-paillette" %>
+    <div class="hexagon-project-border spin-project"></div>
+  </div>
+
+
 </div>
 

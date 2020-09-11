@@ -3,11 +3,13 @@
   width: 350px;
   height: 202.07px;
   margin: 101.04px 0;
-  background-image: url("tennis.jpeg");
+  // background-image: url("tennis.jpeg");
   background-size: auto 392.5982px;
   background-position: center;
   border-left: solid 5px #ffffff;
   border-right: solid 5px #ffffff;
+  filter: blur(0px);
+  z-index: 2;
 }
 
 .hexTop,
@@ -71,4 +73,84 @@
   z-index: 2;
   background: inherit;
   filter: blur(2px);
+}
+// -----------------------------------------------------------------------------
+// Hexagon-project-border
+// -----------------------------------------------------------------------------
+
+.hexagon-project-border {
+  position: absolute;
+  width: 385px;
+  height: 222.28px;
+  background-color: #e4f4f3;
+  margin: 111.14px 0;
+  border-left: solid 5px $dark-green;
+  border-right: solid 5px $dark-green;
+  z-index: 0;
+  top: -5%;
+  right: -5%;
+
+  @keyframes spin{
+    100% { transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes spin{
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin{
+    100% { -moz-transform: rotate(360deg); }
+  }
+}
+
+.hexagon-project-border:before,
+.hexagon-project-border:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 272.24px;
+  height: 272.24px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 51.3819px;
+}
+
+.hexagon-project-border:before {
+  top: -136.1181px;
+  border-top: solid 7.0711px $dark-green;
+  border-right: solid 7.0711px $dark-green;
+}
+
+.hexagon-project-border:after {
+  bottom: -136.1181px;
+  border-bottom: solid 7.0711px $dark-green;
+  border-left: solid 7.0711px $dark-green;
+}
+
+
+.project-element {
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .logo-ama {
+    top: 36%;
+    left: 6%;
+    width: 90%;
+  }
+
+  .logo-paillette {
+    top: 46%;
+    left: 15%;
+    width: 70%;
+  }
+}
+
+.spin-project {
+  animation: spin infinite linear;
+  animation-duration: 60s;
 }
