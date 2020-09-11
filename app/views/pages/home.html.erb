@@ -40,10 +40,10 @@
     </div>
   </div>
 
-  <div>
-    <h1 class="hello">Hello,</h1>
-  </div>
-  <div>
+  <div class="presentation">
+    <div>
+      <h1 class="hello">Hello,</h1>
+    </div>
     <h4 class="intro">Je suis un développeur Ruby On Rails, basé sur Paris et formé au Wagon en 2020</h4>
     <p>
       J'ai été <strong>infirmier</strong> pendant 3 ans avant d'en arriver là, mais je n'avais pas trouvé ma vocation à travers ce métier.
@@ -58,15 +58,41 @@
     </p>
   </div>
 
+
   <div class="project-div">
-    <h1 class="project-name animate__animated">Ama Sport Manager</h1>
-    <div class="project-element animate__animated">
+    <h1 class="project-name animate__animated" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" >Ama Sport Manager</h1>
+    <div class="project-element animate__animated" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
       <div class="hexagon-project" style="background-image: url('<%= image_path('tennis.jpeg') %>');">
         <div class="hexTop"></div>
         <div class="hexBottom"></div>
       </div>
       <%= image_tag "ama_no_bg.png", class: "logo-ama" %>
       <div class="hexagon-project-border spin-project"></div>
+    </div>
+    <div class="hide-animation-right"></div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body d-flex">
+          <div class="description">
+            AMA Sport Manager représente mon projet final du Wagon. Nous sommes 4 à avoir développer cette application web en deux semaines de temps.
+            Le but de ce projet est de mettre en pratique ce que nous avons appris durant la formation, tout en exprimant notre créativité. <br>
+            <br>
+            Dans AMA vous incarnez un joueur de tennis souhaitant plannifier ses futurs saisons, afin d'apréhender le plus possible ses gains et dépenses, et donc de mieux gérer son budgets et ses déplacements à travers le monde.
+          </div>
+          <div class="technologies">
+            <h2>Technologies</h2>
+            <ul>
+              <li>Ruby On Rails</li>
+              <li>Javascript</li>
+              <li>HTML5</li>
+              <li>CSS3 (Sass)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -80,8 +106,8 @@
       <div class="hexagon-project-border spin-project"></div>
     </div>
     <h1 class="project-name animate__animated">Paillette</h1>
+    <div class="hide-animation-left"></div>
   </div>
-
 
 </div>
 

@@ -138,6 +138,7 @@
   width: 100%;
   margin-bottom: 10%;
   align-items: center;
+  position: relative;
 
   .project-name {
     color: $green;
@@ -145,6 +146,24 @@
     width: 50%;
     z-index: 0;
     text-align: center;
+  }
+
+  .hide-animation-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 5;
+    background-color: $background;
+  }
+
+  .hide-animation-left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 5;
+    background-color: $background;
   }
 }
 

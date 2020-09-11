@@ -1,13 +1,24 @@
-.hello {
-  color: $green;
-  font-size: 75px;
+.presentation {
+
+  p {
+    font-size: 18px;
+    color: $gray;
+  }
+
+  .hello {
+    color: $green;
+    font-size: 75px;
+  }
+
+  .intro {
+    font-weight: 300;
+    font-style: italic;
+    color: $light-gray;
+    font-size: 30px;
+  }
 }
 
-.intro {
-  font-weight: 300;
-  font-style: italic;
-  color: $gray;
-}
+
 
 .contact {
   position: fixed;

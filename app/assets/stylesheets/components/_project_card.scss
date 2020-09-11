@@ -1,0 +1,17 @@
+.card-body {
+  border: none;
+  background-color: $background;
+  flex-direction: initial;
+
+  .description {
+    font-size: 18px;
+    color: $gray;
+  }
+
+  .technologies {
+
+    h2 {
+      color: $green;
+    }
+  }
+}
