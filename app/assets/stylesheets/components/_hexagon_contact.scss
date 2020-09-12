@@ -103,3 +103,33 @@
   box-shadow: 0 0 8px rgba(111,249,222,1);
 }
 
+.contact {
+  position: fixed;
+  left: 3%;
+  top: 29%;
+
+  .vertical-line {
+    border-left: 1px solid $green;
+    border-left: 3px solid #45A193;
+    height: 88px;
+    margin-left: 45%;
+  }
+}
+
+// @media (max-width: 1200px) {
+
+// }
+// @media (max-width: 992px) {
+
+// }
+
+// @media (max-width: 768px) {
+
+// }
+
+@media (max-width: 576px) {
+  .contact {
+    display: none;
+  }
+}
+

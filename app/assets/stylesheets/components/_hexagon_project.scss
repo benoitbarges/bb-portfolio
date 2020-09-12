@@ -78,7 +78,7 @@
   filter: blur(2px);
 }
 // -----------------------------------------------------------------------------
-// Hexagon-project-border
+//                                Hexagon-project-border
 // -----------------------------------------------------------------------------
 
 .hexagon-project-border {
@@ -133,14 +133,14 @@
 }
 
 // -----------------------------------------------------------------------------
-// project-div
+//                                  project-div
 // -----------------------------------------------------------------------------
 
 .project-div {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   align-items: center;
   position: relative;
 
@@ -232,3 +232,155 @@
 .slide-left {
   animation: slide-left 1s ease forwards;
 }
+
+// @media (max-width: 1200px) {
+
+// }
+// @media (max-width: 992px) {
+
+// }
+
+// @media (max-width: 768px) {
+
+// }
+
+// -----------------------------------------------------------------------------
+//                                 MAX WIDTH 576px
+// -----------------------------------------------------------------------------
+
+@media (max-width: 576px) {
+  .hexagon-project {
+    position: relative;
+    width: 215px;
+    height: 124.13px;
+    margin: 62.07px 0;
+    background-image: url(http://csshexagon-project.com/img/meow.jpg);
+    background-size: auto 236.7136px;
+    background-position: center;
+    border-left: solid 5px #ffffff;
+    border-right: solid 5px #ffffff;
+  }
+
+  .hexTop,
+  .hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 152.03px;
+    height: 152.03px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 26.49px;
+  }
+
+  /*counter transform the bg image on the caps*/
+  .hexTop:after,
+  .hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 205.0000px;
+    height: 118.35680518387329px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-59.1784px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-59.1784px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-59.1784px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+  }
+
+  .hexTop {
+    top: -76.0140px;
+    border-top: solid 7.0711px #ffffff;
+    border-right: solid 7.0711px #ffffff;
+  }
+
+  .hexTop:after {
+    background-position: center top;
+  }
+
+  .hexBottom {
+    bottom: -76.0140px;
+    border-bottom: solid 7.0711px #ffffff;
+    border-left: solid 7.0711px #ffffff;
+  }
+
+  .hexBottom:after {
+    background-position: center bottom;
+  }
+
+  .hexagon-project:after {
+    content: "";
+    position: absolute;
+    top: 2.8868px;
+    left: 0;
+    width: 205.0000px;
+    height: 118.3568px;
+    z-index: 2;
+    background: inherit;
+  }
+
+// -----------------------------------------------------------------------------
+//                                Hexagon-project-border
+// -----------------------------------------------------------------------------
+
+  .hexagon-project-border {
+    position: absolute;
+    width: 235px;
+    height: 135.68px;
+    background-color: #e4f4f3;
+    margin: 67.84px 0;
+    border-left: solid 5px #45a193;
+    border-right: solid 5px #45a193;
+  }
+
+  .hexagon-project-border:before,
+  .hexagon-project-border:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 166.17px;
+    height: 166.17px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 29.4150px;
+  }
+
+  .hexagon-project-border:before {
+    top: -83.0850px;
+    border-top: solid 7.0711px #45a193;
+    border-right: solid 7.0711px #45a193;
+  }
+
+  .hexagon-project-border:after {
+    bottom: -83.0850px;
+    border-bottom: solid 7.0711px #45a193;
+    border-left: solid 7.0711px #45a193;
+  }
+
+
+// -----------------------------------------------------------------------------
+//                                  project-div
+// -----------------------------------------------------------------------------
+
+  .project-div {
+    flex-direction: column;
+    height: 100vh;
+
+    .project-name {
+      order: 1;
+      font-size: 24px;
+      width: 100%;
+    }
+
+    .hide-animation-left,
+    .hide-animation-right {
+      display: none;
+    }
+  }
+}
+

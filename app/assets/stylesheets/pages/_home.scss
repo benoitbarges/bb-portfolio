@@ -1,5 +1,7 @@
 .presentation {
 
+  text-align: justify;
+
   p {
     font-size: 18px;
     color: $gray;
@@ -18,21 +20,6 @@
   }
 }
 
-
-
-.contact {
-  position: fixed;
-  left: 3%;
-  top: 29%;
-
-  .vertical-line {
-    border-left: 1px solid $green;
-    border-left: 3px solid #45A193;
-    height: 88px;
-    margin-left: 45%;
-  }
-}
-
 // @media (max-width: 1200px) {
 
 // }
@@ -44,5 +31,5 @@
 
 // }
 
-@media (max-width: 576px) {
-}
+// @media (max-width: 576px) {
+// }
