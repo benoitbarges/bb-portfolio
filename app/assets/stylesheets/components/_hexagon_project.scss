@@ -369,17 +369,48 @@
 
   .project-div {
     flex-direction: column;
-    height: 100vh;
+    justify-content: flex-end;
+    height: 400px;
 
     .project-name {
       order: 1;
       font-size: 24px;
       width: 100%;
+      position: absolute;
+      bottom: -4%;
     }
 
     .hide-animation-left,
     .hide-animation-right {
       display: none;
+    }
+  }
+
+  .project-element {
+    margin-bottom: 20%;
+
+    @keyframes slide-right {
+      100% { transform: translateY(0%);}
+    }
+
+    @-webkit-keyframes slide-right {
+      100% { transform: translateY(0%); }
+    }
+
+    @-moz-keyframes slide-right {
+      100% { transform: translateY(0%); }
+    }
+
+    @keyframes slide-left {
+      100% { transform: translateY(0%);}
+    }
+
+    @-webkit-keyframes slide-left {
+      100% { transform: translateY(0%); }
+    }
+
+    @-moz-keyframes slide-left {
+      100% { transform: translateY(0%); }
     }
   }
 }
