@@ -2,8 +2,9 @@
 class MessageMailerPreview < ActionMailer::Preview
 
   # Preview this email at http://localhost:3000/rails/mailers/message_mailer/sendMessage
-  def sendMessage
-    MessageMailer.sendMessage
+  def contact(message)
+    @message = message
+    MessageMailer.contact
   end
 
 end

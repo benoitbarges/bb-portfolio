@@ -1,6 +1,8 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://www.benoitbarges.com" }
+  # config.action_mailer.default_url_options = { host: "http://www.benoitbarges.com" }
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "http://benoitbarges.com" }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
