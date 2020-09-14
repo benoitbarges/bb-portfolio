@@ -98,7 +98,7 @@
               <li>Ruby On Rails</li>
               <li>Javascript</li>
               <li>HTML5</li>
-              <li>CSS (Sass)</li>
+              <li>SCSS</li>
             </ul>
           </div>
         </div>
@@ -123,22 +123,36 @@
     <div class="col">
       <div class="collapse multi-collapse" id="paillette">
         <div class="card card-body d-flex">
-          <div class="description">
-            <strong>Paillette</strong>
-          </div>
           <div class="technologies">
             <h2>Technologies</h2>
             <ul>
               <li>Ruby On Rails</li>
               <li>Javascript</li>
+              <li>Stripe</li>
               <li>HTML5</li>
-              <li>CSS (Sass)</li>
+              <li>SCSS</li>
             </ul>
+          </div>
+          <div class="description">
+            <strong>Paillette</strong> est un site consacré à la mode, proposant à ses utilisateurs une sélection pointue de looks à adopter au quotidien.
+            " Porte les pièces choisies autant que tu veux et libère de l'espace dans ton placard au fur et à mesure que tu les rends, pour en commander". <br>
+            <br>
+            J'ai developpé ce projet quelque temps après avoir terminé ma formation. Nous avons collaboré avec les 2 créateurs de la marque afin de répondre au mieux à leurs attentes.
+            Nous sommes actuellement en train de rendre le site responsive pour toutes les plateformes.
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="message-form">
+    <%= simple_form_for(Message.new) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :email %>
+      <%= f.input :content %>
+      <%= f.submit "Envoyer" %>
+    <% end %>
+
+  </div>
 </div>
 
