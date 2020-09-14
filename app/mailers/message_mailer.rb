@@ -20,6 +20,6 @@ class MessageMailer < ApplicationMailer
                     }
 
    # Send your message through the client
-   mg_client.send_message 'benoitbarges.com', message_params
+   mg_client.send_message 'http://www.benoitbarges.com', message_params
   end
 end
