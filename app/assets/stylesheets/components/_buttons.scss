@@ -21,10 +21,9 @@
   padding-top: 10px;
 }
 
-.green-button:before,
-.green-button:after {
+.green-button .before,
+.green-button .after {
   content: "";
-  background: url('hexagon-btn.svg');
   width: 50px;
   height: 45px;
   position: absolute;
@@ -32,11 +31,11 @@
   top: 0px;
 }
 
-.green-button:before {
+.green-button .before {
   left: -25px;
 }
 
-.green-button:after {
+.green-button .after {
   right: -25px;
 }
 
