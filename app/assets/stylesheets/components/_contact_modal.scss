@@ -2,6 +2,10 @@
   color: $dark-green;
   border: 1px solid $dark-green;
 
+  .modal-body {
+    font-size: 18px;
+  }
+
   .form-control {
 
     &:focus {
