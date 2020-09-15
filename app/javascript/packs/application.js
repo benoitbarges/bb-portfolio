@@ -30,9 +30,11 @@ import "bootstrap";
 import { spinHexagon } from '../components/spin_hexagon';
 import { openProject } from '../components/open_project';
 import { hoverProject } from '../components/hover_project';
+import { handleAnimate } from '../components/handle_animate';
 
 document.addEventListener('turbolinks:load', () => {
   spinHexagon();
   openProject();
   hoverProject();
+  handleAnimate();
 });
