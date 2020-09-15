@@ -78,9 +78,15 @@
 
 // }
 
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .hexagon-picture {
+    margin-right: auto;
+  }
 
-// }
+  .picture {
+    margin-top: 10%;
+  }
+}
 
 // -----------------------------------------------------------------------------
 //                                 MAX WIDTH 576px

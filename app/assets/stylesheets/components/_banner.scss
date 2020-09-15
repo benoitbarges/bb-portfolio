@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: 50vh;
+  min-height: 100vh;
 
   .my-name {
     font-weight: 200;
@@ -35,9 +35,14 @@
 }
 
 @media (max-width: 576px), (max-height: 576px) {
-  .my-name {
-    font-size: 40px !important;
+  .banner {
+    margin: 25%;
+    min-height: 50vh;
   }
+
+    .my-name {
+      font-size: 40px !important;
+    }
 
   .fullstack {
     font-size: 20px !important;
