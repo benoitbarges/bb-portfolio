@@ -85,7 +85,7 @@
   position: absolute;
   width: 385px;
   height: 222.28px;
-  background-color: #e4f4f3;
+  background-color: $background;
   margin: 111.14px 0;
   border-left: solid 5px $green;
   border-right: solid 5px $green;
@@ -240,9 +240,63 @@
 
 // }
 
-// @media (max-width: 768px) {
+// -----------------------------------------------------------------------------
+//                                 MAX WIDTH 768px
+// -----------------------------------------------------------------------------
 
-// }
+
+@media (max-width: 768px) {
+
+// -----------------------------------------------------------------------------
+//                                  project-div
+// -----------------------------------------------------------------------------
+
+  .project-div {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 550px;
+
+    .project-name {
+      order: 1;
+      font-size: 24px;
+      width: 100%;
+      position: absolute;
+      bottom: -24%;
+    }
+
+    .hide-animation-left,
+    .hide-animation-right {
+      display: none;
+    }
+  }
+
+  .project-element {
+
+    @keyframes slide-right {
+      100% { transform: translateY(0%);}
+    }
+
+    @-webkit-keyframes slide-right {
+      100% { transform: translateY(0%); }
+    }
+
+    @-moz-keyframes slide-right {
+      100% { transform: translateY(0%); }
+    }
+
+    @keyframes slide-left {
+      100% { transform: translateY20%);}
+    }
+
+    @-webkit-keyframes slide-left {
+      100% { transform: translateY(0%); }
+    }
+
+    @-moz-keyframes slide-left {
+      100% { transform: translateY(0%); }
+    }
+  }
+}
 
 // -----------------------------------------------------------------------------
 //                                 MAX WIDTH 576px
@@ -330,7 +384,7 @@
     position: absolute;
     width: 235px;
     height: 135.68px;
-    background-color: #e4f4f3;
+    background-color: $background;
     margin: 67.84px 0;
     border-left: solid 5px #45a193;
     border-right: solid 5px #45a193;
@@ -390,27 +444,27 @@
     margin-bottom: 20%;
 
     @keyframes slide-right {
-      100% { transform: translateY(0%);}
+      100% { transform: translateY(20%);}
     }
 
     @-webkit-keyframes slide-right {
-      100% { transform: translateY(0%); }
+      100% { transform: translateY(20%); }
     }
 
     @-moz-keyframes slide-right {
-      100% { transform: translateY(0%); }
+      100% { transform: translateY(20%); }
     }
 
     @keyframes slide-left {
-      100% { transform: translateY(0%);}
+      100% { transform: translateY(20%);}
     }
 
     @-webkit-keyframes slide-left {
-      100% { transform: translateY(0%); }
+      100% { transform: translateY(20%); }
     }
 
     @-moz-keyframes slide-left {
-      100% { transform: translateY(0%); }
+      100% { transform: translateY(20%); }
     }
   }
 }

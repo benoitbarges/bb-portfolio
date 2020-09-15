@@ -22,7 +22,7 @@
 }
 
 .bio {
-  margin-bottom: 80px;
+  min-height: 100vh;
 }
 
 // @media (max-width: 1200px) {
@@ -38,6 +38,7 @@
 
 @media (max-width: 576px) {
   .presentation {
+    margin-bottom: 30px;
 
     .intro {
       font-size: 24px;
@@ -46,6 +47,10 @@
     p {
       font-size: 16px;
     }
+  }
+
+  .bio {
+    margin-bottom: 60px;
   }
 }
 

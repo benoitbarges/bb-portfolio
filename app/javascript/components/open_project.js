@@ -4,18 +4,23 @@ const openProject = () => {
   projectDivs.forEach((projectDiv) => {
     const projectName = projectDiv.querySelector('.project-name');
     const projectElement = projectDiv.querySelector('.project-element');
+    const projectCard = projectDiv.nextElementSibling;
 
     if (projectDiv.firstElementChild === projectName) {
       projectName.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutRight');
         projectElement.classList.add('slide-right');
-        projectElement.scrollIntoView({behavior: "smooth", block: "start"});
+        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
+          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
+        }
       });
 
       projectElement.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutRight');
         projectElement.classList.add('slide-right');
-        projectElement.scrollIntoView({behavior: "smooth", block: "start"});
+        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
+          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
+        }
       });
     }
 
@@ -23,12 +28,16 @@ const openProject = () => {
       projectName.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutLeft');
         projectElement.classList.add('slide-left');
-        projectElement.scrollIntoView({behavior: "smooth", block: "start"});
+        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
+          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
+        }
       });
        projectElement.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutLeft');
         projectElement.classList.add('slide-left');
-        projectElement.scrollIntoView({behavior: "smooth", block: "start"});
+         if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
+          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
+        }
       });
     }
   });

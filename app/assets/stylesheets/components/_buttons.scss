@@ -1,0 +1,62 @@
+.link-to {
+  position: absolute;
+  right: 180px;
+  bottom: 0px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.green-button {
+  background: $light-green;
+  color: $dark-green;
+  position: relative;
+  z-index: 10;
+  height: 45px;
+  width: 80px;
+  align-self: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.green-button:before,
+.green-button:after {
+  content: "";
+  background: url('hexagon-btn.svg');
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+.green-button:before {
+  left: -25px;
+}
+
+.green-button:after {
+  right: -25px;
+}
+
+// @media (max-width: 1200px) {
+
+// }
+// @media (max-width: 992px) {
+
+// }
+
+// @media (max-width: 768px) {
+
+// }
+
+@media (max-width: 576px) {
+  .link-to {
+  position: initial;
+  align-self: center;
+  margin-top: 40px;
+  }
+}
+
+

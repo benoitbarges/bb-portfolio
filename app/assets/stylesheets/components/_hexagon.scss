@@ -1,9 +1,9 @@
 .hexagon {
   position: relative;
-  width: 600px;
-  height: 346.41px;
+  width: 500px;
+  height: 288.68px;
   background-color: #ffffff;
-  margin: 173.21px 0;
+  margin: 144.34px 0;
   box-shadow: 0 0 8px rgba(111,249,222,1);
 }
 
@@ -12,22 +12,22 @@
   content: "";
   position: absolute;
   z-index: 1;
-  width: 424.26px;
-  height: 424.26px;
+  width: 353.55px;
+  height: 353.55px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 87.8680px;
+  left: 73.2233px;
   box-shadow: 0 0 8px rgba(111,249,222,1);
 }
 
 .hexagon:before {
-  top: -212.1320px;
+  top: -176.7767px;
 }
 
 .hexagon:after {
-  bottom: -212.1320px;
+  bottom: -176.7767px;
 }
 
 /*cover up extra shadows*/
@@ -36,8 +36,8 @@
   position: absolute;
   top:0px;
   left: 0;
-  width:600px;
-  height:346.4102px;
+  width:500px;
+  height:288.6751px;
   z-index: 2;
   background: inherit;
 
@@ -155,55 +155,3 @@
     flex-direction: column;
   }
 }
-
-// @media (max-height: 576px) {
-//   .hexagon {
-//     position: relative;
-//     width: 300px;
-//     height: 173.21px;
-//     background-color: #ffffff;
-//     margin: 86.60px 0;
-//     box-shadow: 0 0 8px rgba(111,249,222,1);
-//   }
-
-//   .hexagon:before,
-//   .hexagon:after {
-//     content: "";
-//     position: absolute;
-//     z-index: 1;
-//     width: 212.13px;
-//     height: 212.13px;
-//     -webkit-transform: scaleY(0.5774) rotate(-45deg);
-//     -ms-transform: scaleY(0.5774) rotate(-45deg);
-//     transform: scaleY(0.5774) rotate(-45deg);
-//     background-color: inherit;
-//     left: 43.9340px;
-//     box-shadow: 0 0 8px rgba(111,249,222,1);
-//   }
-
-//   .hexagon:before {
-//     top: -106.0660px;
-//   }
-
-//   .hexagon:after {
-//     bottom: -106.0660px;
-//   }
-
-//   /*cover up extra shadows*/
-//   .hexagon span {
-//     display: block;
-//     position: absolute;
-//     top:0px;
-//     left: 0;
-//     width:300px;
-//     height:173.2051px;
-//     z-index: 2;
-//     background: inherit;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//   }
-// }
-
