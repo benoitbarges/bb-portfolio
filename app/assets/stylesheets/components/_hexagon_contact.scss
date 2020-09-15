@@ -129,6 +129,46 @@
 }
 
 @media (max-width: 576px) {
+  .contact {
+    display: flex;
+    position: initial;
+  }
+
+  .linkedin {
+    bottom: 40%;
+    right: 10.5%;
+
+    .fa-linkedin-in {
+      margin-top: 18%;
+    }
+  }
+
+  .github {
+    bottom: -2%;
+    right: 5%;
+
+    .fa-github {
+      margin-top: 18%;
+    }
+  }
+
+  .paper-plane {
+    bottom: -2%;
+    left: 5%;
+
+    .fa-paper-plane {
+      top: 19%;
+    }
+  }
+
+  .address-card {
+    bottom: 40%;
+    left: 10.5%;
+
+    .fa-address-card {
+      top: 19%;
+    }
+  }
 
 }
 
