@@ -10,17 +10,11 @@ const openProject = () => {
       projectName.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutRight');
         projectElement.classList.add('slide-right');
-        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
-          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
-        }
       });
 
       projectElement.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutRight');
         projectElement.classList.add('slide-right');
-        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
-          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
-        }
       });
     }
 
@@ -28,16 +22,11 @@ const openProject = () => {
       projectName.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutLeft');
         projectElement.classList.add('slide-left');
-        if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
-          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
-        }
       });
        projectElement.addEventListener('click', (event) => {
         projectName.classList.add('animate__fadeOutLeft');
         projectElement.classList.add('slide-left');
-         if (!projectCard.querySelector(".multi-collapse").classList.contains("show")) {
-          projectDiv.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center"})
-        }
+
       });
     }
   });
