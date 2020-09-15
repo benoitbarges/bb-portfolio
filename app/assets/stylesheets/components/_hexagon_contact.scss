@@ -124,19 +124,13 @@
 
 @media (max-width: 768px) {
   .contact {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact {
-    display: flex;
+    display: flex !important;
     position: static;
   }
 
   .linkedin {
-    bottom: 40%;
-    right: 10.5%;
+    bottom: 30%;
+    right: 22.5%;
 
     .fa-linkedin-in {
       margin-top: 18%;
@@ -144,8 +138,8 @@
   }
 
   .github {
-    bottom: -2%;
-    right: 5%;
+    bottom: -20%;
+    right: 10%;
 
     .fa-github {
       margin-top: 18%;
@@ -153,8 +147,8 @@
   }
 
   .paper-plane {
-    bottom: -2%;
-    left: 5%;
+    bottom: -20%;
+    left: 10%;
 
     .fa-paper-plane {
       top: 19%;
@@ -162,13 +156,35 @@
   }
 
   .address-card {
-    bottom: 40%;
-    left: 10.5%;
+    bottom: 20%;
+    left: 22.5%;
 
     .fa-address-card {
       top: 19%;
     }
   }
+}
 
+@media (max-width: 576px) {
+
+  .linkedin {
+    bottom: 40%;
+    right: 10.5%;
+  }
+
+  .github {
+    bottom: -2%;
+    right: 5%;
+  }
+
+  .paper-plane {
+    bottom: -2%;
+    left: 5%;
+  }
+
+  .address-card {
+    bottom: 40%;
+    left: 10.5%;
+  }
 }
 
