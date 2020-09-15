@@ -122,14 +122,14 @@
 
 // }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 768px) {
   .contact {
     display: flex !important;
     position: static;
   }
 
   .linkedin {
-    bottom: 30%;
+    bottom: 45px;
     right: 22.5%;
 
     .fa-linkedin-in {
@@ -156,7 +156,7 @@
   }
 
   .address-card {
-    bottom: 20%;
+    bottom: 45px;
     left: 22.5%;
 
     .fa-address-card {
@@ -165,10 +165,10 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px),(max-height: 576px) {
 
   .linkedin {
-    bottom: 40%;
+    bottom: 38px;
     right: 10.5%;
   }
 
@@ -183,7 +183,7 @@
   }
 
   .address-card {
-    bottom: 40%;
+    bottom: 38px;
     left: 10.5%;
   }
 }
