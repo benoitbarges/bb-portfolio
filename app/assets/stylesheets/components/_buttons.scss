@@ -43,6 +43,10 @@
   width: 130px;
 }
 
+.react-button-div {
+  justify-content: space-evenly;
+}
+
 // @media (max-width: 1200px) {
 
 // }
@@ -59,6 +63,16 @@
   position: initial;
   align-self: center;
   margin-top: 40px;
+  }
+
+  .react-button-div {
+    flex-direction: column !important;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+
+  .margin-top-30 {
+    margin-top: 30px;
   }
 }
 
