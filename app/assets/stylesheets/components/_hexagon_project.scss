@@ -46,6 +46,11 @@
   filter: blur(2px);
 }
 
+.hexReact,
+.hexReact:after {
+  filter: blur(0px) !important;
+}
+
 .hexTop {
   top: -123.7437px;
   border-top: solid 7.0711px #ffffff;
