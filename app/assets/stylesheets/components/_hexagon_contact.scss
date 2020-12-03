@@ -94,6 +94,12 @@
   .fa-address-card {
     left: 22%;
   }
+
+  .malt-logo {
+    top: -12%;
+    max-width: 70%;
+    left: 13%;
+  }
 }
 
 .spin-contact {
@@ -111,7 +117,7 @@
 .contact {
   position: fixed;
   left: 2.5%;
-  top: 35%;
+  top: 28%;
 
 }
 
@@ -122,7 +128,7 @@
   }
 
   .linkedin {
-    bottom: 45px;
+    bottom: 77px;
     right: 22.5%;
 
     .fa-linkedin-in {
@@ -131,17 +137,27 @@
   }
 
   .github {
-    bottom: -20%;
-    right: 10%;
+    bottom: 22px;
+    right: 31px;
 
     .fa-github {
       margin-top: 18%;
     }
   }
 
+  .malt {
+    bottom: 22px;
+    left: 31px;
+
+    .malt-logo {
+      top: 14%;
+      left: 15%;
+    }
+  }
+
   .paper-plane {
-    bottom: -20%;
-    left: 10%;
+    bottom: -22px;
+    left: 1px;
 
     .fa-paper-plane {
       top: 19%;
@@ -149,7 +165,7 @@
   }
 
   .address-card {
-    bottom: 45px;
+    bottom: 77px;
     left: 22.5%;
 
     .fa-address-card {
@@ -169,22 +185,27 @@
 @media (max-width: 576px) {
 
   .linkedin {
-    bottom: 38px;
+    bottom: 62px;
     right: 10.5%;
   }
 
   .github {
-    bottom: -2%;
-    right: 5%;
+    bottom: 17px;
+    right: 17px;
   }
 
   .paper-plane {
-    bottom: -2%;
-    left: 5%;
+    bottom: -25px;
+    left: 0%;
+  }
+
+  .malt {
+    bottom: 17px;
+    left: 17px;
   }
 
   .address-card {
-    bottom: 38px;
+    bottom: 62px;
     left: 10.5%;
   }
 }
