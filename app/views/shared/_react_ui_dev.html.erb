@@ -15,28 +15,36 @@
     <div class="collapse multi-collapse" id="react-project">
       <div class="card card-body d-flex">
         <div class="description">
-          <strong>React</strong> est aujourd'hui une librairie front-end que tout le monde connaît. L'apprendre était pour moi une évidence, j'ai donc réalisé deux minis applications.
+          <strong>React</strong> est aujourd'hui une librairie front-end que tout le monde connaît. L'apprendre était pour moi une évidence.
           <br>
-          La première vous permettra d'affronter 2 profils Github et de voir les repository les plus populaires selon le language. La seconde est un clone d'Hacker News.
+          Github Battle vous permettra d'affronter 2 profils Github et de voir les repository les plus populaires selon le language. J'ai également réalisé un clone d'Hacker News et du Pokedex.
         </div>
         <div class="technologies">
           <h2>Technologies</h2>
           <ul>
             <li>React</li>
             <li>React Hooks</li>
+            <li>React Router</li>
             <li>API Github</li>
           </ul>
         </div>
       </div>
       <div class="react-button-div d-flex mt-5">
-        <a href="https://react-github-battle-bb.herokuapp.com/" target="_blank" class="react-link-to">
+        <a href="https://react-pokedex-bb.herokuapp.com/" target="_blank" class="react-link-to mb-4">
+          <div class="green-button react-button">
+            <span class="before" style="background-image: url('<%= image_path('hexagon-btn.svg') %>');"></span>
+            React Pokedex
+            <span class="after" style="background-image: url('<%= image_path('hexagon-btn.svg') %>');"></span>
+          </div>
+        </a>
+        <a href="https://react-github-battle-bb.herokuapp.com/" target="_blank" class="react-link-to mb-4">
           <div class="green-button react-button">
             <span class="before" style="background-image: url('<%= image_path('hexagon-btn.svg') %>');"></span>
             Github Battle
             <span class="after" style="background-image: url('<%= image_path('hexagon-btn.svg') %>');"></span>
           </div>
         </a>
-        <a href="https://hacker-news-bb.herokuapp.com/" target="_blank" class="react-link-to margin-top-30">
+        <a href="https://hacker-news-bb.herokuapp.com/" target="_blank" class="react-link-to mb-4">
           <div class="green-button react-button">
             <span class="before" style="background-image: url('<%= image_path('hexagon-btn.svg') %>');"></span>
             Hacker News
